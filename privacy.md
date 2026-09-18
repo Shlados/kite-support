@@ -31,6 +31,18 @@ AirDrop or Nearby Share, email.
 That file contains your financial data in readable form, so keep it somewhere
 you consider private. Kite never sends it anywhere on its own.
 
+The other way is one you type yourself. **Email support** in the app opens your
+own mail app with the message already started, addressed to
+kakodjenou@gmail.com. Whatever you write in it reaches me, along with two lines
+naming the app version and your operating system version — nothing from your
+budget, and nothing that identifies you beyond the email address you send from.
+Kite does not send the message; your mail app does, when you tap send. Please
+do not attach a backup file: it holds your finances in readable form.
+
+**Rate Kite** opens the App Store or Play Store rating sheet, which belongs to
+Apple or Google. Your rating goes to them under their own privacy terms. Kite
+learns nothing about it — not even whether you left one.
+
 ## What Kite asks permission for
 
 - **Unlocking** — Face ID or Touch ID on iPhone, fingerprint, face or screen
