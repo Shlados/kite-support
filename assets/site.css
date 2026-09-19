@@ -1,0 +1,176 @@
+/*
+  Kite's support and privacy pages.
+
+  Colours are the app's own tokens (src/theme.js): brandDeep #2A1A5E, brandLight
+  #C9B6FF, ink00 #0F100D. The font is Inter, the app's font, served from this
+  site rather than from Google, so a visitor reading a privacy policy is not
+  handed to a third party. Inter is licensed under the SIL Open Font License
+  (fonts/OFL.txt); the files here are Latin subsets of the 400 and 600 weights.
+*/
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/inter-400.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/inter-600.woff") format("woff");
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #0f100d;
+  --muted: #55535f;
+  --brand: #2a1a5e;
+  --accent: #c9b6ff;
+  --tint: #f1ebff;
+  --rule: #e4dcf7;
+  --focus: #2a1a5e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f100d;
+    --text: #ecebf2;
+    --muted: #a8a6b6;
+    --brand: #c9b6ff;
+    --accent: #c9b6ff;
+    --tint: #1b1730;
+    --rule: #2c2645;
+    --focus: #c9b6ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--brand);
+  color: var(--bg);
+  border-radius: 8px;
+}
+.skip:focus { top: 1rem; }
+
+a { color: var(--brand); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+
+/* ---- header ---------------------------------------------------------------- */
+
+.site-header,
+main,
+.site-footer {
+  width: 100%;
+  max-width: 41rem;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--brand);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.brand img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 22.37%;   /* the iOS icon curve */
+  box-shadow: 0 1px 2px rgba(42, 26, 94, 0.25);
+}
+
+nav { display: flex; gap: 0.25rem; }
+nav a {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav a:hover { color: var(--brand); background: var(--tint); }
+nav a[aria-current="page"] { color: var(--brand); background: var(--tint); }
+
+/* ---- content --------------------------------------------------------------- */
+
+main { padding-block: 2rem 3rem; }
+
+h1, h2 { color: var(--brand); font-weight: 600; }
+h1 { margin: 0 0 1.25rem; font-size: 2rem; line-height: 1.2; letter-spacing: -0.025em; }
+h2 { margin: 2.25rem 0 0.75rem; font-size: 1.3125rem; line-height: 1.3; letter-spacing: -0.015em; }
+
+p { margin: 0 0 1rem; }
+ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+li { margin-bottom: 0.5rem; }
+li::marker { color: var(--accent); }
+
+strong { font-weight: 600; }
+em { font-style: italic; }
+code {
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+  background: var(--tint);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+/* The date under the policy title. */
+h1 + p > em { color: var(--muted); font-style: normal; font-size: 0.9375rem; }
+
+/* Support page: each question is an h3 above its answer. */
+h3 { margin: 1.75rem 0 0.2rem; color: var(--brand); font-size: 1.0625rem; line-height: 1.4; font-weight: 600; }
+h2 + h3 { margin-top: 1.25rem; }
+
+/* ---- footer ---------------------------------------------------------------- */
+
+.site-footer {
+  padding-block: 1.5rem 3rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+.site-footer p { margin: 0; }
+.site-footer a { color: var(--muted); }
+
+@media (max-width: 30rem) {
+  h1 { font-size: 1.75rem; }
+  .brand { font-size: 1.375rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a, nav a { transition: background-color 0.15s ease, color 0.15s ease; }
+}

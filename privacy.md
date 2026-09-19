@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Kite — Privacy Policy
 
-_Last updated: 9 September 2026_
+_Last updated: 19 September 2026_
 
 Kite collects nothing. There is no account, no server, and no analytics.
 
@@ -21,8 +21,8 @@ to: Kite has no backend.
 
 Nothing, unless you choose to send it.
 
-Kite makes **no network requests of any kind**. It contains no networking code,
-no tracking SDK, no crash reporter and no advertising identifier.
+Kite's own code makes **no network requests**: it has no server to talk to, no
+tracking or analytics library, no crash reporter and no advertising identifier.
 
 The one way data can leave your phone is the **backup file**. When you tap
 **Save a backup**, Kite writes a JSON file and hands it to the phone's own
@@ -39,9 +39,11 @@ budget, and nothing that identifies you beyond the email address you send from.
 Kite does not send the message; your mail app does, when you tap send. Please
 do not attach a backup file: it holds your finances in readable form.
 
-**Rate Kite** opens the App Store or Play Store rating sheet, which belongs to
-Apple or Google. Your rating goes to them under their own privacy terms. Kite
-learns nothing about it — not even whether you left one.
+**Rate Kite** opens Kite's page in the App Store or Play Store. Once per
+version, after you close an end-of-period recap, Kite may also ask your phone to
+show the system's own rating prompt. The store page, the prompt and any rating
+you leave belong to Apple or Google, under their own privacy terms. Kite learns
+nothing about them — not even whether you left a rating.
 
 ## What Kite asks permission for
 
@@ -50,23 +52,28 @@ learns nothing about it — not even whether you left one.
   yes or no from the operating system; Kite never receives your biometric data,
   and neither does anyone else. Optional, and off by default.
 - **Notifications** — used only for local reminders about bills you have
-  entered. They are scheduled on the device by the operating system. No push
-  server is involved; Kite has the push capability removed entirely.
+  entered and, if you turn it on, an evening nudge to log spending. They are
+  scheduled on the device by the operating system. No push server is involved:
+  Kite never asks for a push token, and the iPhone build has the push
+  entitlement removed.
 
 ## Your data, and deleting it
 
 There is no copy for anyone to hand over, correct, or delete on your behalf.
 
-- **Export it** at any time: Upcoming → Your data → Save a backup.
-- **Delete all of it** at any time: Upcoming → Your data → Erase all data.
+- **Export it** at any time: Settings → Your data → Save a backup.
+- **Delete all of it** at any time: Settings → Erase all data (at the bottom of
+  the Settings screen).
 - **Delete everything permanently** by deleting the app, which removes its
   container and the database with it.
 
-## Android backups
+## Phone backups
 
 Android's automatic backup to Google Drive is switched off for Kite
 (`allowBackup=false`), so the database is never copied to Google's servers. On
-iPhone the app's files are encrypted while the phone is locked.
+iPhone, Kite's data is included when you back up the phone to iCloud or a
+computer, as with any app; that backup is Apple's feature and stays under your
+control. On iPhone the app's files are encrypted while the phone is locked.
 
 ## Children
 
@@ -80,6 +87,3 @@ that version ships, and the change will be described in the release notes.
 ## Contact
 
 Questions about this policy: **kakodjenou@gmail.com**
-
-
-[Support](/kite-support/)
