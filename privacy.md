@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Kite — Privacy Policy
 
-_Last updated: 19 September 2026_
+_Last updated: 23 September 2026_
 
 Kite collects nothing. There is no account, no server, and no analytics.
 
@@ -39,11 +39,16 @@ budget, and nothing that identifies you beyond the email address you send from.
 Kite does not send the message; your mail app does, when you tap send. Please
 do not attach a backup file: it holds your finances in readable form.
 
-**Rate Kite** opens Kite's page in the App Store or Play Store. Once per
-version, after you close an end-of-period recap, Kite may also ask your phone to
-show the system's own rating prompt. The store page, the prompt and any rating
-you leave belong to Apple or Google, under their own privacy terms. Kite learns
-nothing about them — not even whether you left a rating.
+**Rate Kite** opens Kite's page in the App Store or Play Store. After you have
+closed a couple of end-of-period recaps, Kite may also show a short card in the
+app, never less than two weeks apart, asking you to share Kite, rate it, tell me
+how you budget with someone, or try the purchase planner. There are four of
+them; the two asking a question appear once each, and the other two can come
+back a second time after two months if you closed them. Each card has a button
+and a close (×); the button opens the share sheet, the store page, your mail app
+or a screen inside Kite. The store page and any rating you leave belong to
+Apple or Google, under their own privacy terms. Kite learns nothing about what
+you do with a card, not even whether you tapped it or left a rating.
 
 ## What Kite asks permission for
 
@@ -56,6 +61,32 @@ nothing about them — not even whether you left a rating.
   scheduled on the device by the operating system. No push server is involved:
   Kite never asks for a push token, and the iPhone build has the push
   entitlement removed.
+
+## Sharing Kite
+
+**Share Kite** in Help opens the phone's share sheet with a line of text and the
+store link, and no figures from your budget. Where it goes is your choice; Kite
+learns nothing about it. **Budget with someone? Tell me** opens your mail app
+with a few questions and no figures, addressed to kakodjenou@gmail.com.
+
+## Planning a purchase
+
+**Plan a purchase** works out, from the figures already in Kite, whether
+something you want to buy fits: paying now, setting money aside, or paying over
+time. It is arithmetic on your device. It looks nothing up, checks no prices or
+rates, and makes no network request. Nothing is saved unless you choose one of
+the options, and then only as a debt or a savings item in your own budget.
+
+## The Home Screen widget
+
+If you add Kite's widget to your Home Screen, Kite writes a small summary into a
+folder that only Kite and its widget on your phone can read (an iOS App Group):
+the money left this period, the day of the period and your next few bills. The
+widget draws that summary and nothing else. It makes no network requests, just
+as Kite does not. On Android the same summary is kept in Kite's own private
+storage, which only Kite and its widget can read. With Kite's app lock on, the
+summary carries bill names and dates but no amounts. Erasing your data in Kite
+empties it.
 
 ## Your data, and deleting it
 
