@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Kite — Privacy Policy
 
-_Last updated: 23 September 2026_
+_Last updated: 29 September 2026_
 
 Kite collects nothing. There is no account, no server, and no analytics.
 
@@ -19,10 +19,11 @@ to: Kite has no backend.
 
 ## What leaves your device
 
-Nothing, unless you choose to send it.
+Nothing you enter, ever — and nothing at all unless you choose to send it, with
+one small exception described in the next section.
 
-Kite's own code makes **no network requests**: it has no server to talk to, no
-tracking or analytics library, no crash reporter and no advertising identifier.
+Kite has no tracking or analytics library, no crash reporter and no
+advertising identifier, and talks to no server of its own.
 
 The one way data can leave your phone is the **backup file**. When you tap
 **Save a backup**, Kite writes a JSON file and hands it to the phone's own
@@ -49,6 +50,23 @@ and a close (×); the button opens the share sheet, the store page, your mail ap
 or a screen inside Kite. The store page and any rating you leave belong to
 Apple or Google, under their own privacy terms. Kite learns nothing about what
 you do with a card, not even whether you tapped it or left a rating.
+
+## Checking for updates
+
+Once a day at most, Kite asks this website for a small file — the one you are
+reading this page on — that lists the latest version number for iOS and
+Android. If it says a newer version exists than the one installed, Kite shows
+a card offering to take you to the store page; closing it without updating
+just means it asks again the next day.
+
+That request carries nothing about you or your budget: no account, no device
+identifier, no location, nothing you have entered. It is the same kind of
+request your browser makes loading any web page, sent to a file this project
+hosts itself, not a third party. If the request fails or times out — no
+signal, the file is unreachable — Kite behaves exactly as if no update were
+available; it never retries in the background or blocks anything in the app.
+
+This is the one network request Kite's own code makes.
 
 ## What Kite asks permission for
 
