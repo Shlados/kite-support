@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Kite — Privacy Policy
 
-_Last updated: 29 September 2026_
+_Last updated: 8 October 2026_
 
 Kite collects nothing. There is no account, no server, and no analytics.
 
@@ -61,10 +61,13 @@ just means it asks again the next day.
 
 That request carries nothing about you or your budget: no account, no device
 identifier, no location, nothing you have entered. It is the same kind of
-request your browser makes loading any web page, sent to a file this project
-hosts itself, not a third party. If the request fails or times out — no
-signal, the file is unreachable — Kite behaves exactly as if no update were
-available; it never retries in the background or blocks anything in the app.
+request your browser makes loading any web page. This site is hosted on GitHub
+Pages, so GitHub, like any web host, can see the IP address of the request and
+may keep ordinary server logs under its own privacy statement. Kite does not
+store that address, and I do not collect or see it. If the request fails or
+times out — no signal, the file is unreachable — Kite behaves exactly as if no
+update were available; it never retries in the background or blocks anything in
+the app.
 
 This is the one network request Kite's own code makes.
 
