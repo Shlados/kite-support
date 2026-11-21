@@ -162,7 +162,8 @@ wrong, and it can only suggest: it never changes your budget unless you tap
   text they used, to enforce a daily limit. It holds no question text. The count
   is deleted with your account.
 - Anthropic handles what it receives under its own API terms, as a service
-  provider to Kite. Those terms say Anthropic does not use data sent through its
+  provider to Kite. It may process it outside Canada, including in the United
+  States. Those terms say Anthropic does not use data sent through its
   API to train its models without permission. They also allow Anthropic to keep
   requests for a limited time (up to 30 days under its standard terms), and
   longer where its safety systems flag content or the law requires. Anthropic's
