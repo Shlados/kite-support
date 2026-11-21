@@ -10,25 +10,25 @@ permalink: /
 
 ### Where is my data?
 
-On your phone, and nowhere else. Kite has no account and no server. That means
-nothing to sign into, and no copy of your finances on anyone's machine.
+On your phone, and in your Kite account. You sign in with Apple or Google, and
+your budget is saved to your private account (a database in Canada) so it opens
+on any phone you sign in on. Only you can read it. There is no bank login and no
+analytics, and your data is never sold. Details are in the
+[privacy policy](privacy/).
 
 ### So what happens if I lose my phone?
 
-Whatever is in your last backup is what you get back. Kite reminds you every
-six days, and you should take that seriously. An iPhone backup (iCloud or a
-computer) usually covers Kite. On Android, Kite is left out of Google's backup
-on purpose. Either way, a Kite backup file is the only copy you can point at and
-move to a different phone — including from an iPhone to an Android, or back.
-
-Settings → Your data → **Save a backup**, then keep the file somewhere that
-isn't only on the phone.
+Sign in with the same Apple or Google account on the new phone and your budget
+comes back. You can also keep a backup file of your own: Settings → Your data →
+**Save a backup**, then keep it somewhere that isn't only on the phone. The
+Android phone-backup note: Kite is left out of Google's automatic backup on
+purpose, because your account already holds the budget.
 
 ### How do I move to a new phone?
 
-Install Kite, then Settings → Your data → **Restore from a backup**, and pick
-the file. Restoring replaces everything currently in the app, so export first
-if there is anything on the new phone worth keeping.
+Install Kite and sign in with the same Apple or Google account. Your budget
+downloads. A backup file also still works: Settings → Your data → **Restore from
+a backup**.
 
 ### Why are my pay periods not calendar months?
 
@@ -66,4 +66,4 @@ Please do **not** attach a backup file — it contains your finances.
 
 ## Privacy
 
-Kite collects nothing. Read the full [privacy policy](privacy/).
+Kite stores your budget in your account, never sells it, and has no analytics. Read the full [privacy policy](privacy/). To delete your account, see [Delete your account](delete-account/).
