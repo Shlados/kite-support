@@ -10,7 +10,7 @@ _Last updated: 21 November 2026_
 
 Kite has accounts. You sign in with Apple or Google so your budget opens on any
 phone. Kite does not ask for your bank logins, has no analytics and no
-advertising, and never sells or shares your data.
+advertising, and never sells your data or shares it for advertising or tracking.
 
 ## What Kite stores, and where
 
@@ -72,6 +72,7 @@ budget saved under the other.
   restore it from Settings, Your data. It is kept for 30 days and removed
   sooner if you delete your account or erase all data. It never leaves the
   phone.
+- **A question to Ask Kite**, only if you turn it on and ask: your question and the parts of your budget needed to answer go to Anthropic through Kite's server, as described under Ask Kite below.
 - An **email you send**. **Email support** in the app opens your own mail app
   with the message started, addressed to kakodjenou@gmail.com. What you write
   reaches me, along with two lines naming the app version and your operating
@@ -138,6 +139,35 @@ makes.
 store link, and no figures from your budget. Where it goes is your choice; Kite
 learns nothing about it. **Budget with someone? Tell me** opens your mail app
 with a few questions and no figures, addressed to kakodjenou@gmail.com.
+
+## Ask Kite
+
+**Ask Kite** is optional. It stays off until you agree the first time you open
+it, and you can turn it off in Settings, Privacy, which removes it from the app.
+It needs you to be signed in, because it reads your budget from your account.
+
+When you ask a question, Kite's server reads your budget from your account (your
+pay schedule, bills, amounts and dates, and bill names unless you turn on **Hide
+bill names**) and sends the parts it needs, with your question, to **Anthropic**,
+the company that makes Claude. Claude writes the reply. The figures in a reply
+come from Kite's own calculations, not from Claude, and Kite discards a reply
+that states a figure its calculations did not produce. Ask Kite can still be
+wrong, and it can only suggest: it never changes your budget unless you tap
+**Apply**, and then Undo is there.
+
+- Kite does not store your questions or Claude's answers on its server. The last
+  conversation is kept on your phone, outside your synced budget; **New chat**
+  clears it.
+- Kite's server keeps a daily count of how many questions you asked and how much
+  text they used, to enforce a daily limit. It holds no question text. The count
+  is deleted with your account.
+- Anthropic handles what it receives under its own API terms, as a service
+  provider to Kite. Those terms say Anthropic does not use data sent through its
+  API to train its models without permission. They also allow Anthropic to keep
+  requests for a limited time (up to 30 days under its standard terms), and
+  longer where its safety systems flag content or the law requires. Anthropic's
+  current terms govern; they can change.
+- Nothing is sent to Anthropic unless you ask a question.
 
 ## Planning a purchase
 
