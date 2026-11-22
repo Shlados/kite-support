@@ -19,7 +19,7 @@ analytics, and your data is never sold. Details are in the
 ### So what happens if I lose my phone?
 
 Sign in with the same Apple or Google account on the new phone and your budget
-comes back. You can also keep a backup file of your own: Settings → Your data →
+comes back. You can also keep a backup file of your own: My account → Your data →
 **Save a backup**, then keep it somewhere that isn't only on the phone. The
 Android phone-backup note: Kite is left out of Google's automatic backup on
 purpose, because your account already holds the budget.
@@ -27,7 +27,7 @@ purpose, because your account already holds the budget.
 ### How do I move to a new phone?
 
 Install Kite and sign in with the same Apple or Google account. Your budget
-downloads. A backup file also still works: Settings → Your data → **Restore from
+downloads. A backup file also still works: My account → Your data → **Restore from
 a backup**.
 
 ### Why are my pay periods not calendar months?
@@ -40,7 +40,7 @@ than around January.
 ### A bill is showing as late and I already paid it.
 
 Tick it on the Period or Upcoming tab. Ticking a bill records it at its planned
-amount. If it came to a different amount, open Settings → Expenses, tap the bill
+amount. If it came to a different amount, open My account → Expenses, tap the bill
 and change its amount.
 
 ### I did not spend a variable budget this period.
@@ -51,7 +51,7 @@ an untouched one simply counts as zero.
 
 ### Reminders are not arriving.
 
-Check Settings → Reminders is on, and that notifications are allowed for Kite
+Check My account → Reminders is on, and that notifications are allowed for Kite
 in your phone's settings. Reminders are scheduled on your phone for the next
 three months (up to 60) and rebuilt whenever you change or tick something in
 Kite. Open Kite now and then to keep them topped up.
@@ -66,4 +66,4 @@ Please do **not** attach a backup file — it contains your finances.
 
 ## Privacy
 
-Kite stores your budget in your account, never sells it, and has no analytics. Read the full [privacy policy](privacy/). To delete your account, see [Delete your account](delete-account/).
+Kite stores your budget in your account, never sells it, and collects usage analytics only if you agree. Read the full [privacy policy](privacy/). To delete your account, see [Delete your account](delete-account/).

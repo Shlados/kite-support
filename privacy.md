@@ -9,8 +9,9 @@ permalink: /privacy/
 _Last updated: 21 November 2026_
 
 Kite has accounts. You sign in with Apple or Google so your budget opens on any
-phone. Kite does not ask for your bank logins, has no analytics and no
-advertising, and never sells your data or shares it for advertising or tracking.
+phone. Kite does not ask for your bank logins, has no advertising, collects
+usage analytics only if you agree, and never sells your data or shares it for
+advertising or tracking.
 
 ## What Kite stores, and where
 
@@ -69,7 +70,7 @@ budget saved under the other.
   holds another account's budget, Kite clears the phone so the two never mix. It
   first saves a copy of what was there to a file in Kite's own folder on that
   phone, so a change that never reached the old account is not lost. You can
-  restore it from Settings, Your data. It is kept for 30 days and removed
+  restore it from My account, Your data. It is kept for 30 days and removed
   sooner if you delete your account or erase all data. It never leaves the
   phone.
 - **A question to Ask Kite**, only if you turn it on and ask: your question and the parts of your budget needed to answer go to Anthropic through Kite's server, as described under Ask Kite below.
@@ -79,8 +80,12 @@ budget saved under the other.
   system version — nothing from your budget. Kite does not send it; your mail
   app does, when you tap send. Please do not attach a backup file.
 
-Kite has no tracking or analytics library, no crash reporter and no advertising
-identifier.
+- **Usage analytics**, only if you agree (see Usage analytics below).
+- **Anonymous counts** that carry no account and no device identifier (see
+  Anonymous counts below).
+- **Your answer about email news**, if you are signed in (see Email news below).
+
+Kite has no crash reporter and no advertising identifier.
 
 **Rate Kite** opens Kite's page in the App Store or Play Store. After you have
 closed a couple of end-of-period recaps, Kite may also show a short card in the
@@ -92,8 +97,8 @@ closed your 3rd, 6th or 12th pay period, one more card says so and offers to
 share Kite; the message it prepares says how many periods you have closed and
 nothing from your budget. Each card has a button and a close (×). The store
 page and any rating you leave belong to Apple or Google, under their own privacy
-terms. Kite learns nothing about what you do with a card, not even whether you
-tapped it or left a rating.
+terms. Kite never learns whether you left a rating. If you allowed usage
+analytics, Kite records that you tapped Share, and nothing about where it went.
 
 ## Your period goal
 
@@ -116,7 +121,13 @@ may keep ordinary server logs under its own privacy statement. Kite does not
 store that address, and I do not collect or see it. If the request fails, Kite
 behaves exactly as if no update were available.
 
-Besides signing in and syncing, this is the only network request Kite's own code
+If you turn on **Tell me about new versions** (My account › Reminders, off by
+default), the phone also runs this same check in the background, about once a
+day when the operating system allows it, and shows one notification per new
+version. The request is the same and carries nothing about you.
+
+Besides signing in, syncing, Ask Kite, usage analytics if you agreed and the
+anonymous counts below, this is the only network request Kite's own code
 makes.
 
 ## What Kite asks permission for
@@ -127,7 +138,8 @@ makes.
   and neither does anyone else. Optional, and off by default.
 - **Notifications** — used only for local reminders about bills you have
   entered and, if you turn them on, an evening nudge to log spending and a
-  weekly "money minute" that says nothing about your figures. A bill reminder
+  weekly "money minute" that says nothing about your figures, and, if you turn
+  it on, one notification when a new version of Kite is out. A bill reminder
   has an **I paid it** button: it opens Kite and marks that bill paid, with an
   Undo. They are scheduled on the device by the operating system. No push server
   is involved: Kite never asks for a push token, and the iPhone build has the
@@ -135,15 +147,17 @@ makes.
 
 ## Sharing Kite
 
-**Share Kite** in Help opens the phone's share sheet with a line of text and the
-store link, and no figures from your budget. Where it goes is your choice; Kite
+**Share Kite** in My account opens the phone's share sheet with a line of text
+and the store link, and no figures from your budget. The link carries a tag
+("share" or "milestone") so the App Store and Play Store can count installs that
+came from sharing; it says nothing about you. Where it goes is your choice; Kite
 learns nothing about it. **Budget with someone? Tell me** opens your mail app
 with a few questions and no figures, addressed to kakodjenou@gmail.com.
 
 ## Ask Kite
 
 **Ask Kite** is optional. It stays off until you agree the first time you open
-it, and you can turn it off in Settings, Privacy, which removes it from the app.
+it, and you can turn it off in My account, Privacy, which removes it from the app.
 It needs you to be signed in, because it reads your budget from your account.
 
 When you ask a question, Kite's server reads your budget from your account (your
@@ -170,6 +184,53 @@ wrong, and it can only suggest: it never changes your budget unless you tap
   current terms govern; they can change.
 - Nothing is sent to Anthropic unless you ask a question.
 
+## Usage analytics
+
+Off until you agree. After you have used Kite a little, it asks once whether
+you want to help improve it; you can change your answer any time in My account,
+Privacy (**Share usage with Kite**).
+
+If you agree, Kite sends **PostHog** (a product analytics service, hosted in the
+United States) which screens and buttons you use, for example that you logged an
+expense, marked a bill paid, opened or used Ask Kite, saved or restored a
+backup, finished setup, tapped Share, or opened Kite that day. Each event can
+carry a short label such as which tab or what kind of item, never a number.
+
+- Events are linked to your Kite account's random ID, not to your name or email.
+- They never include amounts, bill or income names, dates from your budget,
+  your questions to Ask Kite, or anything you typed.
+- No session recording, no automatic capture of what you tap, and no location
+  from your IP address.
+- Turning it off stops it at once. Signing out or deleting your account also
+  forgets the link on the phone. To have the records already sent deleted,
+  write to me at the address below.
+
+## Email news
+
+At sign-in, or later in My account, Privacy, you can tick **Email me when Kite
+gets something new**. It is unticked unless you tick it. Kite saves your answer,
+the time you gave it and where (sign-in or settings) with your account, and
+keeps a history of changes, as Canada's anti-spam law asks. Your email address
+is the one your provider shared at sign-in. **No email is sent yet.** When Kite
+starts sending them, each will say who sent it and have a link to unsubscribe.
+Your answer is deleted with your account.
+
+## Anonymous counts
+
+To know whether Kite works for people, Kite's server keeps a few counts that
+are not linked to any account or device:
+
+- each step of the sign-in screen (shown, tapped Apple or Google, succeeded,
+  failed or cancelled), with the platform and the day;
+- for signed-in people, one mark a day that Kite was opened and one that
+  something was done in it (an expense logged or a bill paid), with the
+  platform and the day;
+- if you delete your account and choose to say why, the reason you picked.
+
+They hold no ID, no amounts and nothing you entered, so they cannot be traced
+back to you, and they are not deleted with an account because nothing ties them
+to one.
+
 ## Planning a purchase
 
 **Plan a purchase** works out, from the figures already in Kite, whether
@@ -190,16 +251,17 @@ and dates but no amounts. Signing out or erasing your data empties it.
 
 ## Your data, and deleting it
 
-- **Export it** at any time: Settings → Your data → Save a backup.
-- **Sign out**: Settings → Account → Sign out. Your budget is removed from that
+- **Export it** at any time: My account → Your data → Save a backup.
+- **Sign out**: My account → Sign out. Your budget is removed from that
   phone and stays in your account. Sign in again to bring it back.
-- **Delete your account**: Settings → Account → Delete account. This deletes
-  your budget, your sign-in record and, for Apple accounts, the stored Apple
+- **Delete your account**: My account → Privacy → Delete account. This deletes
+  your budget, your sign-in record, your email-news answer and its history,
+  your Ask Kite daily counts and, for Apple accounts, the stored Apple
   token from Kite's database, tells Apple to end the Sign in with Apple link
   for Kite, and clears the phone, for good. Routine database backups kept by the
   hosting provider can hold a deleted account's data for a short while, days not
   months, before they expire.
-- **Erase all data** (the bottom of Settings, shown when you are signed out)
+- **Erase all data** (the bottom of My account, shown when you are signed out)
   clears the budget on this phone. When you are signed in, use Sign out to clear
   the phone, or Delete account to remove your budget from the account as well.
 - Deleting the app removes Kite's files from the phone, including the saved

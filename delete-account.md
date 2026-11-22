@@ -8,10 +8,11 @@ permalink: /delete-account/
 
 ## In the app (the fastest way)
 
-1. Open Kite and go to **Settings → Account**.
-2. Tap **Delete account** and confirm.
+1. Open Kite and go to **My account → Privacy**.
+2. Tap **Delete account** at the bottom and confirm. Kite then asks, optionally, what
+   didn't work; you can skip it.
 
-This deletes your budget and your sign-in record from Kite's database, and, if
+This deletes your budget, your sign-in record and your email-news answer from Kite's database, and, if
 you signed in with Apple, ends the Sign in with Apple link for Kite. It also
 clears the phone. It cannot be undone.
 
